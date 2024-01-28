@@ -1,0 +1,27 @@
+html,
+body {
+    font-family: sans-serif;
+    width: 350px;
+}
+
+.tabs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tabs li {
+    background: #0000000F;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
+.tabs a {
+    padding: 1rem 1.5rem;
+    display: block;
+    color: #000000F0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    position: relative;
+    top: 2px;
+}

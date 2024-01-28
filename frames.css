@@ -1,0 +1,91 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.handle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: #888;
+    z-index: 2;
+    cursor: col-resize;
+}
+
+.vertical .handle {
+    left: 0;
+    right: 0;
+    height: 5px;
+    width: inherit;
+    cursor: row-resize;
+}
+
+.tabs {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tabs ul {
+    list-style: none;
+    padding: 0;
+    overflow: auto;
+    position: absolute;
+    top: 10vh;
+    bottom: 10vh;
+    left: 5vw;
+    right: 5vw;
+}
+
+.vertical .tabs ul {
+    top: 3rem;
+    bottom: 3rem;
+    left: 10vw;
+    right: 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tabs li {
+    background: #0000000F;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
+.vertical .tabs li {
+    margin-bottom: 0;
+}
+
+.tabs a {
+    padding: 1rem 1.5rem;
+    display: block;
+    color: #000000F0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    position: relative;
+    top: 2px;
+}
+
+.iframe {
+    border: none;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Split View: Horizontal (3 frames)</title>
+    <link rel="stylesheet" href="frames.css" />
+    <style>
+        #container-1 {
+            left: 0;
+            right: calc(66vw - 2.5px);
+            background-color: aliceblue;
+        }
+        #container-2 {
+            left: calc(33vw + 2.5px);
+            right: calc(33vw - 2.5px);
+            background-color: white;
+        }
+        #container-3 {
+            left: calc(66vw + 2.5px);
+            right: 0;
+            background-color: rgb(255, 246, 234);
+        }
+        #handle-1-2 {
+            left: calc(33vw - 2.5px);
+        }
+        #handle-2-3 {
+            left: calc(66vw - 2.5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container-1">
+        <div class="tabs" id="tabs-1"></div>
+        <iframe class="iframe" id="iframe-1"
+                sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+        ></iframe>
+    </div>
+    <div id="handle-1-2" class="handle"></div>
+    <div class="container" id="container-2">
+        <div class="tabs" id="tabs-2"></div>
+        <iframe class="iframe" id="iframe-2"
+                sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+        ></iframe>
+    </div>
+    <div id="handle-2-3" class="handle"></div>
+    <div class="container" id="container-3">
+        <div class="tabs" id="tabs-3"></div>
+        <iframe class="iframe" id="iframe-3"
+                sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+        ></iframe>
+    </div>
+    <script src="frames.js" data-ids="1,2,3" id="script"></script>
+</body>
+</html>
